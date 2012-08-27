@@ -28,7 +28,7 @@ public class Item {
 	public double total() {
 		return this.quantidade * this.valor;
 	}
-	//getters
+	//getters and setters
 	public String getDescricao() {
 		return this.descricao;
 	}	
@@ -37,5 +37,11 @@ public class Item {
 	}
 	public double getValor() {
 		return this.valor;
-	}	
+	}
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
 }

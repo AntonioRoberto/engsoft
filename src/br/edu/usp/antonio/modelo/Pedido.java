@@ -20,7 +20,9 @@ public class Pedido {
 	@OneToMany(cascade = CascadeType.ALL)	
 	private List<Item> itens = new ArrayList<Item>();
 	
-	
+	public void limpaLista() {
+			itens = new ArrayList<Item>();
+	}
 	public double calculaValorTotal() {
 		double resp = 0.0;
 		for (Item it:itens) {
